@@ -1,2 +1,102 @@
 <h1>FindTheDog#questions</h1>
-<p>Find me in app/views/find_the_dog/questions.html.erb</p>
+
+<%= form_tag(result_path, method: :get) do %>
+
+  <div>I've got more than 50 likes for any post at Facebook.</div>
+  <%= radio_button_tag(:sociable, "-1") %>
+  <%= label_tag(:sociable, "No") %>
+  <%= radio_button_tag(:sociable, "0") %>
+  <%= label_tag(:sociable, "Maybe") %>
+  <%= radio_button_tag(:sociable, "1") %>
+  <%= label_tag(:sociable, "Yes") %>
+
+  <div>I remember what I ate yesterday morning.</div>
+  <%= radio_button_tag(:intelligent, "-1") %>
+  <%= label_tag(:intelligent, "No") %>
+  <%= radio_button_tag(:intelligent, "0") %>
+  <%= label_tag(:intelligent, "Maybe") %>
+  <%= radio_button_tag(:intelligent, "1") %>
+  <%= label_tag(:intelligent, "Yes") %>
+
+  <div>I have broken my bones while I was playing.</div>
+  <%= radio_button_tag(:energetic, "-1") %>
+  <%= label_tag(:energetic, "No") %>
+  <%= radio_button_tag(:energetic, "0") %>
+  <%= label_tag(:energetic, "Maybe") %>
+  <%= radio_button_tag(:energetic, "1") %>
+  <%= label_tag(:energetic, "Yes") %>
+
+  <div>People often tell me secrets.</div>
+  <%= radio_button_tag(:brave, "-1") %>
+  <%= label_tag(:brave, "No") %>
+  <%= radio_button_tag(:brave, "0") %>
+  <%= label_tag(:brave, "Maybe") %>
+  <%= radio_button_tag(:brave, "1") %>
+  <%= label_tag(:brave, "Yes") %>
+
+  <div>I would eat pizza if all of my friends want.</div>
+  <%= radio_button_tag(:gentle, "-1") %>
+  <%= label_tag(:gentle, "No") %>
+  <%= radio_button_tag(:gentle, "0") %>
+  <%= label_tag(:gentle, "Maybe") %>
+  <%= radio_button_tag(:gentle, "1") %>
+  <%= label_tag(:gentle, "Yes") %>
+
+  <div>I have a hobby that I have been doing for a long time.</div>
+  <%= radio_button_tag(:patient, "-1") %>
+  <%= label_tag(:patient, "No") %>
+  <%= radio_button_tag(:patient, "0") %>
+  <%= label_tag(:patient, "Maybe") %>
+  <%= radio_button_tag(:patient, "1") %>
+  <%= label_tag(:patient, "Yes") %>
+
+  <div>I don't change my mind depending on what people think.</div>
+  <%= radio_button_tag(:stubborn, "-1") %>
+  <%= label_tag(:stubborn, "No") %>
+  <%= radio_button_tag(:stubborn, "0") %>
+  <%= label_tag(:stubborn, "Maybe") %>
+  <%= radio_button_tag(:stubborn, "1") %>
+  <%= label_tag(:stubborn, "Yes") %>
+
+  <div>Love ACTION MOVIES</div>
+  <%= radio_button_tag(:active, "-1") %>
+  <%= label_tag(:active, "No") %>
+  <%= radio_button_tag(:active, "0") %>
+  <%= label_tag(:active, "Maybe") %>
+  <%= radio_button_tag(:active, "1") %>
+  <%= label_tag(:active, "Yes") %>
+
+  <div>I've never broken my cell phone's screen.</div>
+  <%= radio_button_tag(:cautious, "-1") %>
+  <%= label_tag(:cautious, "No") %>
+  <%= radio_button_tag(:cautious, "0") %>
+  <%= label_tag(:cautious, "Maybe") %>
+  <%= radio_button_tag(:cautious, "1") %>
+  <%= label_tag(:cautious, "Yes") %>
+
+  <div>I like books more than exercise.</div>
+  <%= radio_button_tag(:quiet, "-1") %>
+  <%= label_tag(:quiet, "No") %>
+  <%= radio_button_tag(:quiet, "0") %>
+  <%= label_tag(:quiet, "Maybe") %>
+  <%= radio_button_tag(:quiet, "1") %>
+  <%= label_tag(:quiet, "Yes") %>
+
+  <div>Without my cell phone, I hate calculating tips.</div>
+  <%= radio_button_tag(:straightforward, "-1") %>
+  <%= label_tag(:straightforward, "No") %>
+  <%= radio_button_tag(:straightforward, "0") %>
+  <%= label_tag(:straightforward, "Maybe") %>
+  <%= radio_button_tag(:straightforward, "1") %>
+  <%= label_tag(:straightforward, "Yes") %>
+
+  <div>I like watching movies alone rather than watching others.</div>
+  <%= radio_button_tag(:independent, "-1") %>
+  <%= label_tag(:independent, "No") %>
+  <%= radio_button_tag(:independent, "0") %>
+  <%= label_tag(:independent, "Maybe") %>
+  <%= radio_button_tag(:independent, "1") %>
+  <%= label_tag(:independent, "Yes") %>
+
+  <%= submit_tag 'Find The Dog', name: nil, id: "submit", class:"btn btn-default" %>
+<% end %>

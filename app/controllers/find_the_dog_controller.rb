@@ -37,25 +37,25 @@ class FindTheDogController < ApplicationController
     dogs[:OldEnglishSheepdog] = [2	,	1	,	1	,	1	,	0	,	1]
 
     you = [
-      params[:sociable] - params[:independent],
-      params[:intelligent] - params[:straightforward],
-      params[:energetic] - params[:quiet],
-      params[:brave] - params[:cautious],
-      params[:gentle] - params[:active],
-      params[:patient] - params[:stubborn]
+      params[:sociable].to_i - params[:independent].to_i,
+      params[:intelligent].to_i - params[:straightforward].to_i,
+      params[:energetic].to_i - params[:quiet].to_i,
+      params[:brave].to_i - params[:cautious].to_i,
+      params[:gentle].to_i - params[:active].to_i,
+      params[:patient].to_i - params[:stubborn].to_i
     ]
 
     @result = ""
-    @last_sum = 12
+    @smallest_sum = 24
     dogs.each do |key, value|
       @sum = 0
       value.each_with_index do |value, index|
         @sum += (value - you[index]).abs
       end
-      if @sum < @last_sum
+      if @sum < @smallest_sum
         @result = key
+        @smallest_sum = @sum
       end
-      @last_sum = @sum
     end
 
   end
