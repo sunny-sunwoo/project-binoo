@@ -1,2 +1,18 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+/* Common Settings */
+html {
+  /* 1rem === 15px */
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  /*box-sizing: border-box;*/
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.02em;
+  color: #2d3436;
+
+}

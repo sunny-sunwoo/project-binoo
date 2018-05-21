@@ -13,3 +13,61 @@
  *= require_tree .
  *= require_self
  */
+
+ /* Common Settings */
+ html {
+   /* 1rem === 15px */
+   font-size: 15px;
+   line-height: 1.6;
+   font-family: 'Montserrat', sans-serif;
+ }
+
+ * {
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+   letter-spacing: -0.01em;
+   color: #2d3436;
+ }
+
+.landing-img {
+  margin-top: 15vh;
+  width: 300px;
+ }
+
+.landing-title {
+  color: #ff9f43;
+}
+
+.landing-description {
+  color: #8395a7;
+  width: 500px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.btn-start {
+   margin-top: 10px;
+   margin-bottom: 15vh;
+ }
+
+button{
+  border-color: #ff9f43;
+  background-color: #fff;
+  color: #ff9f43;
+  font-size: 0.73rem;
+  line-height: 1.82;
+  font-weight: 700;
+  letter-spacing: 0.27em;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  outline: none;
+}
+
+button:hover {
+    color: #fff;
+    border-color: #ff9f43;
+    background-color: #ff9f43;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
