@@ -1,4 +1,24 @@
+<section class="result-page">
+	<div class="container flex-container">
+		<div class="row text-center">
+			<div class="col-12">
+				<%= image_tag 'shibainu.jpg', class: "img-circle result-img", alt: "logo" %>
+				<h2 class="result-title">You are <span class="result-dog"><%= @result.name %></span> !!!</h2>
+				<p class="result-description center-block">
+					<%= @result.description %>
+				</p>
+				<%= link_to "share", questions_path, class:"btn__start" %>
+				<%= link_to "restart", root_path, class:"btn__start" %>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- 
 <h1>FindTheDog#result</h1>
 <p>Find me in app/views/find_the_dog/result.html.erb</p>
 
-<p class="result-description"> You are Beagles! </p>
+
+<p class="result-description"> You are Beagles! </p> -->
