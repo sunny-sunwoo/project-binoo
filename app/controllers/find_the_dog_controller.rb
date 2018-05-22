@@ -5,7 +5,7 @@ class FindTheDogController < ApplicationController
   def questions
   end
 
-  def result
+  def doing
     @dogs = Dog.all
     @you = [
       params[:sociable].to_i - params[:independent].to_i,
@@ -32,6 +32,11 @@ class FindTheDogController < ApplicationController
         @smallest_sum = @sum
       end
     end
-
+    redirect_to action: "result", id: @result.id
   end
+
+  def result
+    @result = Dog.find(params[:id])
+  end
+
 end
