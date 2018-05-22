@@ -16,3 +16,18 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+function checkNo(id) {
+	$("#"+id).css("background-color" , "#ff9ff3");
+	$("#"+id).siblings().css("background-color" , "#fff");
+}
+
+function checkMaybe(id) {
+	$("#"+id).css("background-color" , "#c8d6e5");
+	$("#"+id).siblings().css("background-color" , "#fff");
+}
+
+function checkYes(id) {
+	$("#"+id).css("background-color" , "#54a0ff");
+	$("#"+id).siblings().css("background-color" , "#fff");
+}

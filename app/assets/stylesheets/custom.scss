@@ -10,9 +10,160 @@ html {
 }
 
 * {
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   color: #2d3436;
+}
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* landing page */
+.landing-img {
+ width: 300px;
+}
+
+.landing-title {
+ color: #ff9f43;
+}
+
+.landing-description {
+ color: #8395a7;
+ width: 500px;
+ text-align: center;
+ font-weight: 200;
+}
+
+.btn__start {
+  display: inline-block;
+  margin: 10px;
+  background-color: none;
+  color: #ff9f43;
+  font-size: 0.73rem;
+  line-height: 1.82;
+  font-weight: 700;
+  letter-spacing: 0.27em;
+  text-transform: uppercase;
+  border: 1px solid #ff9f43;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  outline: none;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    border-color: #ff9f43;
+    background-color: #ff9f43;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+  }
+}
+
+
+/* result page */
+.result-page {
+  // background-color: rgba(0,210,211, 0.2)
+}
+
+.result-img {
+ width: 200px;
+ height: 200px;
+ &:hover{
+   opacity: 0.8;
+   filter: alpha(opacity=50); /* For IE8 and earlier */
+   transition: 0.2s all ease-in-out;
+ }
+}
+
+.result-title {
+ color: #feca57;
+ margin: 2rem;
+}
+
+.result-dog {
+ color: #ff9f43;
+ font-weight: 800;
+}
+
+.result-description {
+ width: 500px;
+ text-align: center;
+ font-weight: 200;
+}
+
+
+/* question page */
+.each-question {
+  margin: 3vh;
+  padding: 25px;
+  border: 1px solid #dfe6e9;
+}
+
+.question-content {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #636e72;
+}
+
+input[type="radio"] {
+  z-index: -1;
+  opacity: 0;
+
+}
+
+label {
+  display: inline-block;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+
+.check-no {
+  border: 5px solid #ff9ff3;
+  margin-left: 30px;
+  margin-right: 30px;
+  &:hover {
+    background-color: #ff9ff3;
+    transition: 0.1s all ease-in-out;
+  }
+}
+
+.check-maybe {
+  border: 5px solid #c8d6e5;
+  margin-right: 30px;
+  &:hover {
+    background-color: #c8d6e5;
+    transition: 0.1s all ease-in-out;
+  }
+}
+.check-yes {
+  border: 5px solid #54a0ff;
+  margin-right: 30px;
+  &:hover {
+    background-color: #54a0ff;
+    transition: 0.1s all ease-in-out;
+  }
+}
+
+.label-no {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ff9ff3;
+  line-height: 50px;
+  vertical-align: bottom;
+}
+
+.label-yes {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #54a0ff;
+  line-height: 50px;
+  vertical-align: bottom;
 }
