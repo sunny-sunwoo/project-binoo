@@ -2,7 +2,7 @@
 	<div class="container flex-container">
 		<div class="row text-center">
 			<div class="col-12">
-				<%= image_tag 'shibainu.jpg', class: "img-circle result-img", alt: "logo" %>
+				<%= image_tag @result.picture, class: "img-circle result-img", alt: "logo" %>
 				<h2 class="result-title">You are <span class="result-dog"><%= @result.name %></span> !!!</h2>
 				<p class="result-description center-block">
 					<%= @result.description %>
