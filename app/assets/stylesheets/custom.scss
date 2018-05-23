@@ -96,6 +96,17 @@ html {
  font-weight: 200;
 }
 
+.result-link {
+  text-decoration: none !important;
+  color: #feca57;
+  &:hover {
+    color: #ff9f43;
+  }
+  &:visited {
+    color: #feca57;
+  }
+}
+
 
 /* question page */
 .each-question {
