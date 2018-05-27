@@ -1,6 +1,6 @@
 # Project Binoo
 
-### #1 Find Your Doggie.
+### Proj#1 Find Your Doggie.
 
 URL http://binoo.herokuapp.com<br>
 Ruby 2.5.0<br>
@@ -9,7 +9,7 @@ Ruby 2.5.0<br>
 
  * Data resources: Google Search, Wikipedia, American Kennel Club
 
- * From the resources above, we collected raw data and categorized the dog personality depending on the breeds. Based on 6 personality keywords we picked from the analysis, we created 12 simple questions to find the best dog for user's personality.
+ * From the resources above, we collected raw data and categorized the dog personalities depending on the breeds. Based on 6 personality keywords we picked from the analysis, we created 12 simple questions to find the best dog for user's personality.
 
 ***
 
