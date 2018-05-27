@@ -1,3 +1,7 @@
+<% provide(:title, "Binoo - Find Your Doggie") %>
+<% provide(:description, 'Find Your Doggie') %>
+<% provide(:image, request.base_url + asset_path('landing-logo.jpg')) %>
+
 <section class="landing-page">
 	<div class="container flex-container">
 		<div class="row text-center">
@@ -6,9 +10,8 @@
 				<h2 class="landing-title">Find Your Doggie </h2>
 				<p class="landing-description center-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, optio, blanditiis. Totam ducimus molestias atque, veritatis soluta asperiores dicta neque. &#x1F436;</p>
 				<%= link_to "start", questions_path, class:"btn__start" %>
-				
+
 			</div>
 		</div>
 	</div>
 </section>
-
