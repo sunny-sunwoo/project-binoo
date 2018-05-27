@@ -123,14 +123,14 @@ a {
 .link-item{
   display: inline-block;
   width: 20px;
-  &:hover{
-    color: red;
-  }
 }
 
 
 .fa {
-  color: #8395a7 !important;
+  color: #8395a7;
+  &:hover {
+    color: #ff9f43;
+  }
 }
 
 .about-profile {

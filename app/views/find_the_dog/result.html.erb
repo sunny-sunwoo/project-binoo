@@ -11,9 +11,9 @@
 					<p class="result-description center-block">
 						<%= @result.description %>
 					</p>
-					<%= link_to "share", questions_path, class:"btn__start" %>
+					<%= link_to "share", "http://www.facebook.com/sharer/sharer.php?u=#{request.original_url}", class:"btn__start", target:"_blank" %>
 					<%= link_to "restart", root_path, class:"btn__start" %>
-					
+
 				</div>
 			</div>
 		</div>
