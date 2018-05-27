@@ -9,7 +9,7 @@
 					<%= image_tag @result.picture, class: "img-circle result-img img-responsive center-block", alt: "logo" %>
 					<h2 class="result-title">You are <span class="result-dog"><%= @result.name %></span> !!!</h2>
 					<p class="result-description center-block">
-						<%= @result.description %>
+						<%= @result.description %> It seems like <%= @result.name %> can be an awesome friend for you. Why don't you meet your new friend <a href="https://www.google.com/search?q=shelter+pet+near+me" class="result-link" target="_blank">here</a>?
 					</p>
 					<%= link_to "share", "http://www.facebook.com/sharer/sharer.php?u=#{request.original_url}", class:"btn__start", target:"_blank" %>
 					<%= link_to "restart", root_path, class:"btn__start" %>

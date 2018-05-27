@@ -68,6 +68,11 @@ a {
     cursor: pointer;
     transition: 0.2s all ease-in-out;
   }
+  &:focus {
+    text-decoration: none;
+    color: #ff9f43;
+    background-color: none;
+  }
 }
 
 /* about page */
@@ -265,6 +270,10 @@ footer {
   color: #feca57;
   &:hover {
     color: #ff9f43;
+  }
+
+  &:focus {
+    color: #feca57;
   }
 }
 
