@@ -17,7 +17,7 @@ Ruby 2.5.0<br>
 
 We are a Seoul-based & Pittsburgh-based web developer. Enjoying hands-on experience and pushing the boundaries together, We love to ideate, design and develop something new outside the box as a thinker and doer. Please feel free to reach out to us anytime if you wanna be our friend and chat with us :)
 
- * Jisup /Backend @Seoul
+ * **Jisup**  / Backend @Seoul
 
- * Sunwoo /Frontend @Pittsburgh
+ * **Sunwoo**  / Frontend @Pittsburgh
 
