@@ -272,10 +272,11 @@ footer {
 .result-img {
  width: 200px;
  height: 200px;
+ transition: 0.2s all ease-in-out;
  &:hover{
    opacity: 0.8;
    filter: alpha(opacity=50); /* For IE8 and earlier */
-   transition: 0.2s all ease-in-out;
+   transform: scale(0.98, 0.98);
  }
 }
 
