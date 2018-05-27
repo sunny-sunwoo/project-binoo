@@ -264,8 +264,10 @@ footer {
   // margin-bottom: 10px;
   position: absolute;
   width:100%;
-  bottom: 10px;
   height:40px;   /* Height of the footer */
+  &.footer-bottom {
+    bottom: 10px;
+  }
 }
 
 .result-img {
