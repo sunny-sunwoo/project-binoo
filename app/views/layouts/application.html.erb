@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Binoo</title>
+    <title><%= yield :title %></title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119749020-1"></script>
     <script>
@@ -20,6 +20,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Sunflower" rel="stylesheet">
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="<%= yield :description %>">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<%= yield :title %>">
+    <meta property="og:description" content="<%= yield :description %>">
+    <meta property="og:url" content="<%= request.original_url %>">
+    <meta property="og:image" content="<%= yield :image %>">
   </head>
 
   <body>

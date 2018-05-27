@@ -1,3 +1,6 @@
+<% provide(:title, @result.name + " | Binoo") %>
+<% provide(:description, "You are " + @result.name + " !!!") %>
+<% provide(:image, request.base_url + asset_path(@result.picture)) %>
 <main>
 	<section class="result-page">
 		<div class="container">
@@ -28,12 +31,3 @@
 		</div>
 	</div>
 </footer>
-
-
-
-<!-- 
-<h1>FindTheDog#result</h1>
-<p>Find me in app/views/find_the_dog/result.html.erb</p>
-
-
-<p class="result-description"> You are Beagles! </p> -->
