@@ -39,12 +39,20 @@ a {
 .landing-title {
  color: #ff9f43;
  font-weight: 700;
+ transition: 0.2s all ease-in-out;
+ &:hover {
+    color: #feca57;
+  }
 }
 
 .landing-description {
  color: #8395a7;
  text-align: center;
  font-weight: 200;
+ transition: 0.2s all ease-in-out;
+  &:hover {
+    color: rgba(131, 149, 167, 0.7);
+  }
 }
 
 .btn__start {
@@ -154,9 +162,14 @@ a {
 
 .about-description {
   color: #8395a7;
+  font-size: 1.1rem;
   font-weight: 300;
   margin-top: 10px;
   margin-bottom: 50px;
+  transition: 0.2s all ease-in-out;
+  &:hover {
+    color: rgba(131, 149, 167, 0.7);
+  }
 }
 /* question page */
 .each-question {
@@ -276,11 +289,18 @@ footer {
  font-weight: 300;
  margin-bottom: 1.8rem;
  color: #8395a7;
+ transition: 0.2s all ease-in-out;
+  &:hover {
+    color: rgba(131, 149, 167, 0.7);
+  }
 }
 
 .result-link {
   text-decoration: none !important;
   color: #feca57;
+  transition: 0.2s all ease-in-out;
+  font-weight: 400;
+
   &:hover {
     color: #ff9f43;
   }
