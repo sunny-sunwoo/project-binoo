@@ -1,30 +1,33 @@
 <% provide(:title, @result.name + " | Binoo") %>
 <% provide(:description, "You are " + @result.name + " !!!") %>
 <% provide(:image, request.base_url + asset_path(@result.picture)) %>
-
-<section class="result-page">
-	<div class="container flex-container">
-		<div class="row text-center">
-			<div class="col-12">
-				<%= image_tag @result.picture, class: "img-circle result-img", alt: "logo" %>
-				<h2 class="result-title">You are <span class="result-dog"><%= @result.name %></span> !!!</h2>
-				<p class="result-description center-block">
-					<%= @result.description %>
-				</p>
-				<%= link_to "share", "http://www.facebook.com/sharer/sharer.php?u=#{request.original_url}", class:"btn__start", target:"_blank" %>
-				<%= link_to "restart", root_path, class:"btn__start" %>
-				<p class="result-title"><a href="https://www.google.com/search?q=shelter+pet+near+me" class="result-link" target="_blank">Don't buy, Adopt. </a> &#x1F436;</p>
-
+<main>
+	<section class="result-page">
+		<div class="container">
+			<div class="row text-center flex-container">
+				<div class="col-md-6">
+					<%= image_tag @result.picture, class: "img-circle result-img img-responsive center-block", alt: "logo" %>
+					<h2 class="result-title">You are <span class="result-dog"><%= @result.name %></span> !!!</h2>
+					<p class="result-description center-block">
+						<%= @result.description %>
+					</p>
+					<%= link_to "share", questions_path, class:"btn__start" %>
+					<%= link_to "restart", root_path, class:"btn__start" %>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1 text-left">
+				<%= link_to "Proj.Binoo", about_path, class:"result-link" %>
+			</div>
+			<div class="col-md-3 col-md-offset-8 text-right">
+				<a href="https://www.google.com/search?q=shelter+pet+near+me" class="result-link" target="_blank"> Don't buy, <span class="result-bold">Adopt</span>. &#x1F436; </a>
 			</div>
 		</div>
 	</div>
-</section>
-
-
-
-<!--
-<h1>FindTheDog#result</h1>
-<p>Find me in app/views/find_the_dog/result.html.erb</p>
-
-
-<p class="result-description"> You are Beagles! </p> -->
+</footer>

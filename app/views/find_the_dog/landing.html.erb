@@ -1,17 +1,29 @@
 <% provide(:title, "Binoo - Find Your Doggie") %>
 <% provide(:description, 'Find Your Doggie') %>
 <% provide(:image, request.base_url + asset_path('landing-logo.jpg')) %>
-
-<section class="landing-page">
-	<div class="container flex-container">
-		<div class="row text-center">
-			<div class="col-12">
-				<%= image_tag 'landing-logo.jpg', class: "landing-img", alt: "logo" %>
-				<h2 class="landing-title">Find Your Doggie </h2>
-				<p class="landing-description center-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, optio, blanditiis. Totam ducimus molestias atque, veritatis soluta asperiores dicta neque. &#x1F436;</p>
-				<%= link_to "start", questions_path, class:"btn__start" %>
-
+<main>
+	<section class="landing-page">
+		<div class="container">
+			<div class="row text-center flex-container">
+				<div class="col-md-6 col-xs-10">
+					<%= image_tag 'landing-logo.jpg', class: "landing-img img-responsive center-block", alt: "logo" %>
+					<h2 class="landing-title">Find Your Doggie </h2>
+					<p class="landing-description center-block"> Hello there! Here is a simple personality test to see who you are in the lovely doggie world. Now, take a breath and meet your new best friend! &#x1F436;</p>
+					<%= link_to "start", questions_path, class:"btn__start" %>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 text-left">
+				<%= link_to "Proj.Binoo", about_path, class:"result-link" %>
+			</div>
+			<div class="col-md-2 col-md-offset-8 text-right">
+				<a href="" class="result-link"> May 2018</a>
 			</div>
 		</div>
 	</div>
-</section>
+</footer>

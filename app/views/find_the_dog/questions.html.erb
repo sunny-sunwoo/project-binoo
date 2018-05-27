@@ -1,180 +1,195 @@
 <% provide(:title, "question | Binoo") %>
 <% provide(:description, 'question to Find Your Doggie') %>
 <% provide(:image, request.base_url + asset_path('landing-logo.jpg')) %>
+<main class="container">
+	<section class="questions-page row text-center">
+		<%= form_tag(result_path, method: :post) do %>
+		
+		  <div class="each-question ">
+		  	<div class="question-content">I've got more than 50 likes for any post at Facebook.</div>
+		  	<span class="label-no">NO</span>
+		  	<label for="sociable_-1" id="sociable-label-1" class="check-no" onclick="checkNo(id)">
+		  		<%= radio_button_tag(:sociable, "-1", false, required: 'required') %>		
+		  	</label>
+		  	<label for="sociable_0" id="sociable-label-2" class="check-maybe" onclick="checkMaybe(id)">
+		  		<%= radio_button_tag(:sociable, "0") %>
+		  	</label>
+		  	<label for="sociable_1"  id="sociable-label-3" class="check-yes" onclick="checkYes(id)">
+		  		<%= radio_button_tag(:sociable, "1") %>
+		  	</label>
+		  	<span class="label-yes">YES</span>
+		  </div>
+		
+		
+		  <div class="each-question">
+		  	<div class="question-content">I remember what I ate yesterday morning.</div>
+		  	<span class="label-no">NO</span>
+		  	<label for="intelligent_-1" id="intelligent-label-1" class="check-no" onclick="checkNo(id)">
+		  		<%= radio_button_tag(:intelligent, "-1", false, required: 'required') %>		
+		  	</label>
+		  	<label for="intelligent_0" id="intelligent-label-2"  class="check-maybe" onclick="checkMaybe(id)">
+		  		<%= radio_button_tag(:intelligent, "0") %>
+		  	</label>
+		  	<label for="intelligent_1" id="intelligent-label-3" class="check-yes" onclick="checkYes(id)">
+		  		<%= radio_button_tag(:intelligent, "1") %>
+		  	</label><span class="label-yes">YES</span>
+		  </div>
+		  
+		
+		  <div class="each-question">
+		  	<div class="question-content">I have broken my bones while I was playing.</div>
+		  	<span class="label-no">NO</span>
+		  	<label for="energetic_-1" id="energetic-label-1" class="check-no" onclick="checkNo(id)">
+		  			  <%= radio_button_tag(:energetic, "-1", false, required: 'required') %>
+		  	</label>
+		  	<label for="energetic_0" id="energetic-label-2" class="check-maybe" onclick="checkMaybe(id)">
+		  		<%= radio_button_tag(:energetic, "0") %>
+		  	</label>
+		  	<label for="energetic_1" id="energetic-label-3" class="check-yes" onclick="checkYes(id)">
+		  		<%= radio_button_tag(:energetic, "1") %>
+		  	</label><span class="label-yes">YES</span>
+		  </div>
+		
+		  <div class="each-question">
+		  	<div class="question-content">People often tell me secrets.</div>
+		  	<span class="label-no">NO</span>
+		  	<label for="brave_-1" id="brave-label-1" class="check-no" onclick="checkNo(id)">
+		  		<%= radio_button_tag(:brave, "-1", false, required: 'required') %>
+		  	</label>
+		  	<label for="brave_0" id="brave-label-2" class="check-maybe" onclick="checkMaybe(id)">
+		  		<%= radio_button_tag(:brave, "0") %>
+		  	</label>
+		  	<label for="brave_1" id="brave-label-3" class="check-yes" onclick="checkYes(id)">
+		  		<%= radio_button_tag(:brave, "1") %>
+		  	</label><span class="label-yes">YES</span>
+		  </div>
+		
+		  <div class="each-question">
+		  	<div class="question-content">I would eat pizza if all of my friends want.</div>
+		  	<span class="label-no">NO</span>
+		  	<label for="gentle_-1" id="gentle-label-1" class="check-no" onclick="checkNo(id)">
+		  		<%= radio_button_tag(:gentle, "-1", false, required: 'required') %>
+		  	</label>
+		  	<label for="gentle_0" id="gentle-label-2" class="check-maybe" onclick="checkMaybe(id)">
+		  		<%= radio_button_tag(:gentle, "0") %>
+		  	</label>
+		  	<label for="gentle_1" id="gentle-label-3" class="check-yes" onclick="checkYes(id)">
+		  		<%= radio_button_tag(:gentle, "1") %>
+		  	</label><span class="label-yes">YES</span>
+		  </div>
+		
+		  <div class="each-question">
+		  	<div class="question-content">I have a hobby that I have been doing for a long time.</div>
+		  	<span class="label-no">NO</span>
+		  	<label for="patient_-1" id="patient-label-1" class="check-no" onclick="checkNo(id)">
+		  		 	 <%= radio_button_tag(:patient, "-1", false, required: 'required') %>
+		  	</label>
+		  	<label for="patient_0" id="patient-label-2" class="check-maybe" onclick="checkMaybe(id)">
+		  		<%= radio_button_tag(:patient, "0") %>
+		  	</label>
+		  	<label for="patient_1" id="patient-label-3" class="check-yes" onclick="checkYes(id)">
+		  		<%= radio_button_tag(:patient, "1") %>
+		  	</label><span class="label-yes">YES</span>
+		  </div>
+		
+		  <div class="each-question">
+		  	<div class="question-content">I don't change my mind depending on what people think.</div>
+		  	<span class="label-no">NO</span>
+		  	<label for="stubborn_-1" id="stubborn-label-1" class="check-no" onclick="checkNo(id)">
+		  		<%= radio_button_tag(:stubborn, "-1", false, required: 'required') %>	
+		  	</label>
+		  	<label for="stubborn_0" id="stubborn-label-2" class="check-maybe" onclick="checkMaybe(id)">
+		  		<%= radio_button_tag(:stubborn, "0") %>
+		  	</label>
+		  	<label for="stubborn_1" id="stubborn-label-3" class="check-yes" onclick="checkYes(id)">
+		  		<%= radio_button_tag(:stubborn, "1") %>
+		  	</label><span class="label-yes">YES</span>
+		  </div>
+		
+		
+		  <div class="each-question">
+		  	<div class="question-content">Love ACTION MOVIES</div><span class="label-no">NO</span>
+			<label for="active_-1" id="active-label-1" class="check-no" onclick="checkNo(id)">
+		 	 <%= radio_button_tag(:active, "-1", false, required: 'required') %> 
+		 	</label>
+		 	<label for="active_0" id="active-label-2" class="check-maybe" onclick="checkMaybe(id)">
+		 		<%= radio_button_tag(:active, "0") %>
+		 	</label>
+		 	<label for="active_1" id="active-label-3" class="check-yes" onclick="checkYes(id)">
+		 		<%= radio_button_tag(:active, "1") %>
+		 	</label><span class="label-yes">YES</span>
+		  </div>
+		  
+		
+		  <div class="each-question">
+		  	<div class="question-content">I've never broken my cell phone's screen.</div><span class="label-no">NO</span>
+		  	<label for="cautious_-1" id="cautious-label-1" class="check-no" onclick="checkNo(id)">
+		  		<%= radio_button_tag(:cautious, "-1", false, required: 'required') %>
+		  	</label>
+		  	<label for="cautious_0" id="cautious-label-2" class="check-maybe" onclick="checkMaybe(id)">
+		  		<%= radio_button_tag(:cautious, "0") %>
+		  	</label>
+		  	<label for="cautious_1" id="cautious-label-3" class="check-yes" onclick="checkYes(id)">
+		  		<%= radio_button_tag(:cautious, "1") %>
+		  	</label><span class="label-yes">YES</span>
+		  </div>
+		  
+		
+		  <div class="each-question">
+		  	<div class="question-content">I like books more than exercise.</div><span class="label-no">NO</span>
+		  	<label for="quiet_-1" id="quiet-label-1" class="check-no" onclick="checkNo(id)">
+		  			  <%= radio_button_tag(:quiet, "-1", false, required: 'required') %>
+		  	</label>
+		  	<label for="quiet_0" id="quiet-label-2"  class="check-maybe" onclick="checkMaybe(id)">
+		  		<%= radio_button_tag(:quiet, "0") %>
+		  	</label>
+		  	<label for="quiet_1" id="quiet-label-3"  class="check-yes" onclick="checkYes(id)">
+		  		<%= radio_button_tag(:quiet, "1") %>
+		  	</label><span class="label-yes">YES</span>
+		  </div>
+		 
+		
+		  <div class="each-question">
+		  	<div class="question-content">Without my cell phone, I hate calculating tips.</div><span class="label-no">NO</span>
+		  	<label for="straightforward_-1" id="straightforward-label-1" class="check-no" onclick="checkNo(id)">
+		  			  <%= radio_button_tag(:straightforward, "-1", false, required: 'required') %>
+		  	</label>
+		  	<label for="straightforward_0" id="straightforward-label-2" class="check-maybe" onclick="checkMaybe(id)">
+		  		<%= radio_button_tag(:straightforward, "0") %>
+		  	</label>
+		  	<label for="straightforward_1" id="straightforward-label-3" class="check-yes" onclick="checkYes(id)">
+		  		<%= radio_button_tag(:straightforward, "1") %>
+		  	</label><span class="label-yes">YES</span>
+		  </div>
+		  
+		
+		  <div class="each-question">
+		  	<div class="question-content">I like watching movies alone rather than together with others.</div><span class="label-no">NO</span>
+		  	<label for="independent_-1" id="independent-label-1" class="check-no" onclick="checkNo(id)">
+		  		<%= radio_button_tag(:independent, "-1", false, required: 'required') %>	
+		  	</label>
+		  	<label for="independent_0" id="independent-label-2" class="check-maybe" onclick="checkMaybe(id)">
+		  		<%= radio_button_tag(:independent, "0") %>
+		  	</label>
+		  	<label for="independent_1" id="independent-label-3" class="check-yes" onclick="checkYes(id)">
+		  		<%= radio_button_tag(:independent, "1") %>
+		  	</label><span class="label-yes">YES</span>
+		  </div>
+		
+		  <%= submit_tag 'Find The Dog', name: nil, id: "submit", class:"btn btn__start btn__find  center-block" %>
+		<% end %>
+	</section>
+</main>
 
-<section class="questions-page text-center">
-	<%= form_tag(result_path, method: :post) do %>
-
-	  <div class="each-question">
-	  	<div class="question-content">I've got more than 50 likes for any post at Facebook.</div>
-	  	<span class="label-no">NO</span>
-	  	<label for="sociable_-1" id="sociable-label-1" class="check-no" onclick="checkNo(id)">
-	  		<%= radio_button_tag(:sociable, "-1", false, required: 'required') %>
-	  	</label>
-	  	<label for="sociable_0" id="sociable-label-2" class="check-maybe" onclick="checkMaybe(id)">
-	  		<%= radio_button_tag(:sociable, "0") %>
-	  	</label>
-	  	<label for="sociable_1"  id="sociable-label-3" class="check-yes" onclick="checkYes(id)">
-	  		<%= radio_button_tag(:sociable, "1") %>
-	  	</label>
-	  	<span class="label-yes">YES</span>
-	  </div>
-
-
-	  <div class="each-question">
-	  	<div class="question-content">I remember what I ate yesterday morning.</div>
-	  	<span class="label-no">NO</span>
-	  	<label for="intelligent_-1" id="intelligent-label-1" class="check-no" onclick="checkNo(id)">
-	  		<%= radio_button_tag(:intelligent, "-1", false, required: 'required') %>
-	  	</label>
-	  	<label for="intelligent_0" id="intelligent-label-2"  class="check-maybe" onclick="checkMaybe(id)">
-	  		<%= radio_button_tag(:intelligent, "0") %>
-	  	</label>
-	  	<label for="intelligent_1" id="intelligent-label-3" class="check-yes" onclick="checkYes(id)">
-	  		<%= radio_button_tag(:intelligent, "1") %>
-	  	</label><span class="label-yes">YES</span>
-	  </div>
-
-
-	  <div class="each-question">
-	  	<div class="question-content">I have broken my bones while I was playing.</div>
-	  	<span class="label-no">NO</span>
-	  	<label for="energetic_-1" id="energetic-label-1" class="check-no" onclick="checkNo(id)">
-	  			  <%= radio_button_tag(:energetic, "-1", false, required: 'required') %>
-	  	</label>
-	  	<label for="energetic_0" id="energetic-label-2" class="check-maybe" onclick="checkMaybe(id)">
-	  		<%= radio_button_tag(:energetic, "0") %>
-	  	</label>
-	  	<label for="energetic_1" id="energetic-label-3" class="check-yes" onclick="checkYes(id)">
-	  		<%= radio_button_tag(:energetic, "1") %>
-	  	</label><span class="label-yes">YES</span>
-	  </div>
-
-	  <div class="each-question">
-	  	<div class="question-content">People often tell me secrets.</div>
-	  	<span class="label-no">NO</span>
-	  	<label for="brave_-1" id="brave-label-1" class="check-no" onclick="checkNo(id)">
-	  		<%= radio_button_tag(:brave, "-1", false, required: 'required') %>
-	  	</label>
-	  	<label for="brave_0" id="brave-label-2" class="check-maybe" onclick="checkMaybe(id)">
-	  		<%= radio_button_tag(:brave, "0") %>
-	  	</label>
-	  	<label for="brave_1" id="brave-label-3" class="check-yes" onclick="checkYes(id)">
-	  		<%= radio_button_tag(:brave, "1") %>
-	  	</label><span class="label-yes">YES</span>
-	  </div>
-
-	  <div class="each-question">
-	  	<div class="question-content">I would eat pizza if all of my friends want.</div>
-	  	<span class="label-no">NO</span>
-	  	<label for="gentle_-1" id="gentle-label-1" class="check-no" onclick="checkNo(id)">
-	  		<%= radio_button_tag(:gentle, "-1", false, required: 'required') %>
-	  	</label>
-	  	<label for="gentle_0" id="gentle-label-2" class="check-maybe" onclick="checkMaybe(id)">
-	  		<%= radio_button_tag(:gentle, "0") %>
-	  	</label>
-	  	<label for="gentle_1" id="gentle-label-3" class="check-yes" onclick="checkYes(id)">
-	  		<%= radio_button_tag(:gentle, "1") %>
-	  	</label><span class="label-yes">YES</span>
-	  </div>
-
-	  <div class="each-question">
-	  	<div class="question-content">I have a hobby that I have been doing for a long time.</div>
-	  	<span class="label-no">NO</span>
-	  	<label for="patient_-1" id="patient-label-1" class="check-no" onclick="checkNo(id)">
-	  		 	 <%= radio_button_tag(:patient, "-1", false, required: 'required') %>
-	  	</label>
-	  	<label for="patient_0" id="patient-label-2" class="check-maybe" onclick="checkMaybe(id)">
-	  		<%= radio_button_tag(:patient, "0") %>
-	  	</label>
-	  	<label for="patient_1" id="patient-label-3" class="check-yes" onclick="checkYes(id)">
-	  		<%= radio_button_tag(:patient, "1") %>
-	  	</label><span class="label-yes">YES</span>
-	  </div>
-
-	  <div class="each-question">
-	  	<div class="question-content">I don't change my mind depending on what people think.</div>
-	  	<span class="label-no">NO</span>
-	  	<label for="stubborn_-1" id="stubborn-label-1" class="check-no" onclick="checkNo(id)">
-	  		<%= radio_button_tag(:stubborn, "-1", false, required: 'required') %>
-	  	</label>
-	  	<label for="stubborn_0" id="stubborn-label-2" class="check-maybe" onclick="checkMaybe(id)">
-	  		<%= radio_button_tag(:stubborn, "0") %>
-	  	</label>
-	  	<label for="stubborn_1" id="stubborn-label-3" class="check-yes" onclick="checkYes(id)">
-	  		<%= radio_button_tag(:stubborn, "1") %>
-	  	</label><span class="label-yes">YES</span>
-	  </div>
-
-
-	  <div class="each-question">
-	  	<div class="question-content">Love ACTION MOVIES</div><span class="label-no">NO</span>
-		<label for="active_-1" id="active-label-1" class="check-no" onclick="checkNo(id)">
-	 	 <%= radio_button_tag(:active, "-1", false, required: 'required') %>
-	 	</label>
-	 	<label for="active_0" id="active-label-2" class="check-maybe" onclick="checkMaybe(id)">
-	 		<%= radio_button_tag(:active, "0") %>
-	 	</label>
-	 	<label for="active_1" id="active-label-3" class="check-yes" onclick="checkYes(id)">
-	 		<%= radio_button_tag(:active, "1") %>
-	 	</label><span class="label-yes">YES</span>
-	  </div>
-
-
-	  <div class="each-question">
-	  	<div class="question-content">I've never broken my cell phone's screen.</div><span class="label-no">NO</span>
-	  	<label for="cautious_-1" id="cautious-label-1" class="check-no" onclick="checkNo(id)">
-	  		<%= radio_button_tag(:cautious, "-1", false, required: 'required') %>
-	  	</label>
-	  	<label for="cautious_0" id="cautious-label-2" class="check-maybe" onclick="checkMaybe(id)">
-	  		<%= radio_button_tag(:cautious, "0") %>
-	  	</label>
-	  	<label for="cautious_1" id="cautious-label-3" class="check-yes" onclick="checkYes(id)">
-	  		<%= radio_button_tag(:cautious, "1") %>
-	  	</label><span class="label-yes">YES</span>
-	  </div>
-
-
-	  <div class="each-question">
-	  	<div class="question-content">I like books more than exercise.</div><span class="label-no">NO</span>
-	  	<label for="quiet_-1" id="quiet-label-1" class="check-no" onclick="checkNo(id)">
-	  			  <%= radio_button_tag(:quiet, "-1", false, required: 'required') %>
-	  	</label>
-	  	<label for="quiet_0" id="quiet-label-2"  class="check-maybe" onclick="checkMaybe(id)">
-	  		<%= radio_button_tag(:quiet, "0") %>
-	  	</label>
-	  	<label for="quiet_1" id="quiet-label-3"  class="check-yes" onclick="checkYes(id)">
-	  		<%= radio_button_tag(:quiet, "1") %>
-	  	</label><span class="label-yes">YES</span>
-	  </div>
-
-
-	  <div class="each-question">
-	  	<div class="question-content">Without my cell phone, I hate calculating tips.</div><span class="label-no">NO</span>
-	  	<label for="straightforward_-1" id="straightforward-label-1" class="check-no" onclick="checkNo(id)">
-	  			  <%= radio_button_tag(:straightforward, "-1", false, required: 'required') %>
-	  	</label>
-	  	<label for="straightforward_0" id="straightforward-label-2" class="check-maybe" onclick="checkMaybe(id)">
-	  		<%= radio_button_tag(:straightforward, "0") %>
-	  	</label>
-	  	<label for="straightforward_1" id="straightforward-label-3" class="check-yes" onclick="checkYes(id)">
-	  		<%= radio_button_tag(:straightforward, "1") %>
-	  	</label><span class="label-yes">YES</span>
-	  </div>
-
-
-	  <div class="each-question">
-	  	<div class="question-content">I like watching movies alone rather than together with others.</div><span class="label-no">NO</span>
-	  	<label for="independent_-1" id="independent-label-1" class="check-no" onclick="checkNo(id)">
-	  		<%= radio_button_tag(:independent, "-1", false, required: 'required') %>
-	  	</label>
-	  	<label for="independent_0" id="independent-label-2" class="check-maybe" onclick="checkMaybe(id)">
-	  		<%= radio_button_tag(:independent, "0") %>
-	  	</label>
-	  	<label for="independent_1" id="independent-label-3" class="check-yes" onclick="checkYes(id)">
-	  		<%= radio_button_tag(:independent, "1") %>
-	  	</label><span class="label-yes">YES</span>
-	  </div>
-
-	  <%= submit_tag 'Find The Dog', name: nil, id: "submit", class:"btn btn__start center-block" %>
-	<% end %></section>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1 text-left">
+				<%= link_to "Proj.Binoo", about_path, class:"result-link" %>
+			</div>
+			<div class="col-md-2 col-md-offset-9 text-right">
+				<a href="" class="result-link"> May 2018</a>
+			</div>
+		</div>
+	</div>
+</footer>

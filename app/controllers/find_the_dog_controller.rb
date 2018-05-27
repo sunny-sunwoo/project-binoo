@@ -2,6 +2,9 @@ class FindTheDogController < ApplicationController
   def landing
   end
 
+  def about
+  end
+
   def questions
   end
 
