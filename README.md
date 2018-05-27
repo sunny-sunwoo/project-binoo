@@ -1,4 +1,6 @@
-# Project Binoo #1
+# Project Binoo
+
+### #1 Find Your Doggie.
 
 URL http://binoo.herokuapp.com<br>
 Ruby 2.5.0<br>
