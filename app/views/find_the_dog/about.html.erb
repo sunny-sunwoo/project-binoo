@@ -2,13 +2,17 @@
 	<section class="landing-page">
 		<div class="container ">
 			<div class="row">
-				<h2 class="about-title col-12">Project /Binoo/</h2>
+				<div class="col-xs-12">
+					<h2 class="about-title">Project /Binoo/</h2>
+				</div>
 			</div>
 			<div class="row">
-				<p class="about-description" style="width:100%">We are a Seoul-based &amp; Pittsburgh-based web developer. <br> We love to ideate, design and develop something enjoyable with web technologies.</p>
+				<div class="col-xs-12">
+					<p class="about-description">We are a Seoul-based &amp; Pittsburgh-based web developer. <br> We love to ideate, design and develop something enjoyable with web technologies.</p>
+				</div>
 			</div>
 			<div class="row">
-				<div class="about-profile col-xs-3 col-xs-offset-2">
+				<div class="about-profile col-sm-3 col-sm-offset-2">
 					<div class="about-img m-auto center-block"><%= image_tag 'js.png', class: "img-responsive center-block", alt: "jisup" %></div>
 					<div class="profile-text text-center">
 						<p class="profile-role">Backend</p>
@@ -27,12 +31,12 @@
 					</div>
 				</div>
 
-				<div class="about-profile col-xs-3 col-xs-offset-2">
+				<div class="about-profile col-sm-3 col-sm-offset-2">
 					<div class="about-img m-auto center-block"><%= image_tag 'sw.png', class: "img-responsive center-block", alt: "sunwoo" %></div>
 					<div class="profile-text text-center">
 						<p class="profile-role">Frontend</p>
 						<h2 class="profile-name">Sunwoo <span class="profile-detail">@Pittsburgh</span></h2>
-						
+
 						<div class="link">
 							<a class="link-item" target="_blank" href="https://www.linkedin.com/in/sunny-sunwoo-park/" aria-label="Go to LinkedIn Page">
 								<i class="fa fa-linkedin"></i>
@@ -54,10 +58,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2">
-				<a href="" class=result-link>Proj.Binoo</a>
+				<%= link_to "HOME", root_path, class: "result-link" %>
 			</div>
 			<div class="col-md-2 col-md-offset-8">
-				<a href="" class="result-link"> May 2018</a>
+				<%= link_to "May 2018", root_path, class: "result-link" %>
 			</div>
 		</div>
 	</div>
