@@ -3,8 +3,7 @@
 ### Proj#1 Find Your Doggie.
 
 URL http://binoo.herokuapp.com<br>
-Ruby 2.5.0 <br>
-Rails 5.1.6 <br>
+Ruby 2.5.0 / Rails 5.1.6 <br>
 
  Here is a simple personality test to see who you are in the lovely doggie world. Now, take a breath and meet your new best friend! 
 
