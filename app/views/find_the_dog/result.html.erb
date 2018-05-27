@@ -1,3 +1,7 @@
+<% provide(:title, @result.name + " | Binoo") %>
+<% provide(:description, "You are " + @result.name + " !!!") %>
+<% provide(:image, request.base_url + asset_path(@result.picture)) %>
+
 <section class="result-page">
 	<div class="container flex-container">
 		<div class="row text-center">
