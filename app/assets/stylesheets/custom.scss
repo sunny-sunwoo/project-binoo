@@ -34,17 +34,30 @@ a {
 /* landing page */
 .landing-img {
  width: 300px;
+ transition: 0.2s all ease-in-out;
+ &:hover {
+   transform: scale(0.98, 0.98); /** default is 1, scale it to 1.5 */
+   opacity: 0.9;
+ }
 }
 
 .landing-title {
  color: #ff9f43;
  font-weight: 700;
+ transition: 0.2s all ease-in-out;
+ &:hover {
+    color: #feca57;
+  }
 }
 
 .landing-description {
  color: #8395a7;
  text-align: center;
  font-weight: 200;
+ transition: 0.2s all ease-in-out;
+  &:hover {
+    color: rgba(131, 149, 167, 0.7);
+  }
 }
 
 .btn__start {
@@ -82,7 +95,8 @@ a {
   color: #fff;
   font-weight: 700;
   float: left;
-  padding: 7px;
+  margin-top: 50px;
+  padding: 6px 10px 6px 10px;
   font-size: 1.5rem;
   transition: 0.2s all ease-in-out;
   &:hover{
@@ -96,6 +110,7 @@ a {
  margin-bottom: 30px;
  border-radius: 1000px;
  overflow: hidden;
+ transition: 0.2s all ease-in-out;
 
  img {
    width: 100%;
@@ -105,7 +120,7 @@ a {
  &:hover{
    opacity: 0.8;
    filter: alpha(opacity=50); /* For IE8 and earlier */
-   transition: 0.2s all ease-in-out;
+   transform: scale(0.98, 0.98);
  }
 }
 
@@ -128,6 +143,10 @@ a {
   font-size: 1.2rem;
   margin-top: 5px;
   margin-bottom: 5px;
+  transition: 0.2s all ease-in-out;
+  &:hover {
+    color: #feca57;
+  }
 }
 
 .link-item{
@@ -150,9 +169,14 @@ a {
 
 .about-description {
   color: #8395a7;
+  font-size: 1.1rem;
   font-weight: 300;
   margin-top: 10px;
   margin-bottom: 50px;
+  transition: 0.2s all ease-in-out;
+  &:hover {
+    color: rgba(131, 149, 167, 0.7);
+  }
 }
 /* question page */
 .each-question {
@@ -239,19 +263,20 @@ label {
 footer {
   // margin-bottom: 10px;
   width:100%;
-  height:60px;   /* Height of the footer */
-}
-.result-page {
-  // background-color: rgba(0,210,211, 0.2)
+  height:40px;   /* Height of the footer */
+  &.footer-bottom {
+    bottom: 10px;
+  }
 }
 
 .result-img {
  width: 200px;
  height: 200px;
+ transition: 0.2s all ease-in-out;
  &:hover{
    opacity: 0.8;
    filter: alpha(opacity=50); /* For IE8 and earlier */
-   transition: 0.2s all ease-in-out;
+   transform: scale(0.98, 0.98);
  }
 }
 
@@ -271,11 +296,18 @@ footer {
  font-weight: 300;
  margin-bottom: 1.8rem;
  color: #8395a7;
+ transition: 0.2s all ease-in-out;
+  &:hover {
+    color: rgba(131, 149, 167, 0.7);
+  }
 }
 
 .result-link {
   text-decoration: none !important;
   color: #feca57;
+  transition: 0.2s all ease-in-out;
+  font-weight: 400;
+
   &:hover {
     color: #ff9f43;
   }

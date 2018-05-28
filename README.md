@@ -1,25 +1,23 @@
-# README
+# Project Binoo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Proj#1 Find Your Doggie.
 
-Things you may want to cover:
+URL http://binoo.herokuapp.com<br>
+Ruby 2.5.0 / Rails 5.1.6 <br>
 
-* Ruby version
+ Here is a simple personality test to see who you are in the lovely doggie world. Now, take a breath and meet your new best friend! 
 
-* System dependencies
+ * Data resources: Google Search, Wikipedia, American Kennel Club
 
-* Configuration
+ * From the resources above, we collected raw data and categorized the dog personalities depending on the breeds. Based on 6 personality keywords we picked from the analysis, we created 12 simple questions to find the best dog for user's personality.
 
-* Database creation
+***
 
-* Database initialization
+### Team Binoo
 
-* How to run the test suite
+We are a Seoul-based & Pittsburgh-based web developer. Enjoying hands-on experience and pushing the boundaries together, We love to ideate, design and develop something new outside the box as a thinker and doer. Please feel free to reach out to us anytime if you wanna be our friend and chat with us :)
 
-* Services (job queues, cache servers, search engines, etc.)
+ * **Jisup**  / Backend @Seoul
 
-* Deployment instructions
+ * **Sunwoo**  / Frontend @Pittsburgh
 
-* ...
->>>>>>> 40e6878f00c596d720600cd4b83f108afb78dd91
