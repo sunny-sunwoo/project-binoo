@@ -108,7 +108,7 @@
 
 
 		  <div class="each-question">
-		  	<div class="question-content">Love ACTION MOVIES</div><span class="label-no">NO</span>
+		  	<div class="question-content">Love ACTION MOVIES!</div><span class="label-no">NO</span>
 			<label for="active_-1" id="active-label-1" class="check-no" onclick="checkNo(id)">
 		 	 <%= radio_button_tag(:active, "-1", false, required: 'required') %>
 		 	</label>
@@ -176,7 +176,7 @@
 		  	</label><span class="label-yes">YES</span>
 		  </div>
 
-		  <%= submit_tag 'Find The Dog', name: nil, id: "submit", class:"btn btn__start btn__find  center-block" %>
+		  <%= submit_tag 'Find The Dog', name: nil, id: "submit", class:"btn btn__start btn__find" %>
 		<% end %>
 	</section>
 </main>
@@ -186,7 +186,7 @@
 			<div class="col-sm-2">
 				<%= link_to "Proj.Binoo", about_path, class:"result-link" %>
 			</div>
-			<div class="col-sm-2 col-sm-offset-8">
+			<div class="col-sm-2 col-sm-offset-8 text-right">
 				<%= link_to "May.2018", root_path, class: "result-link" %>
 			</div>
 		</div>
