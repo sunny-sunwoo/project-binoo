@@ -10,24 +10,24 @@
 					<h2 class="result-title">You are a <span class="result-dog"><%= @result.name %></span> !!!</h2>
 					<p class="result-description center-block">
 						<%= @result.description %>(source <%= link_to "wikipedia", "https://en.wikipedia.org/wiki/"+ @result.name, class:"result-link", target:"_blank" %>)<br>
-							It seems like <%= @result.name %> can be an awesome friend for you. Why don't you meet your new best friend 
+							It seems like <%= @result.name %> can be an awesome friend for you. Why don't you meet your new best friend
 						<%= link_to "here", "https://www.google.com/search?q=#{@result.name}&source=lnms&tbm=isch", class:"result-link", target:"_blank" %>?
 					</p>
-					<%= link_to "share", "http://www.facebook.com/sharer/sharer.php?u=#{request.original_url}", class:"btn__start", target:"_blank" %>
-					<%= link_to "restart", root_path, class:"btn__start" %>
+					<div><%= link_to "share", "http://www.facebook.com/sharer/sharer.php?u=#{request.original_url}", class:"btn__start", target:"_blank" %>
+						<%= link_to "restart", root_path, class:"btn__start" %></div>
 
 				</div>
 			</div>
 		</div>
 	</section>
 </main>
-<footer class="footer-bottom">
+<footer>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-1 text-left">
+			<div class="col-sm-2">
 				<%= link_to "Proj.Binoo", about_path, class:"result-link" %>
 			</div>
-			<div class="col-sm-3 col-sm-offset-8">
+			<div class="col-sm-3 col-sm-offset-8 text-right">
 				<a href="https://www.google.com/search?q=animal+shelter+near+me" class="result-link" target="_blank"> Don't buy, <span class="result-bold">Adopt</span>. &#x1F436; </a>
 			</div>
 		</div>
